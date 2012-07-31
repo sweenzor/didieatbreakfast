@@ -25,7 +25,13 @@ h1 {
 </head>
 
 <body>
-Nope.
+Nope<script src="processing-1.3.6.min.js"></script><canvas id="breakfast" data-processing-sources="breakfast.pde"></canvas>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+$('canvas').on('click',function () {
+	$('canvas').css({ position: 'fixed', top: 0, right: 0, bottom: 0, left: 0 });
+});
+</script>
 </body>
 
 </html>
